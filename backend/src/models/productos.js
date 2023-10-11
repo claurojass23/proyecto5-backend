@@ -4,7 +4,7 @@ const prosuctoSchema = new mongoose.Schema(
     {
        /* img:String, */
        nombre:String,
-       descripcion:String,
+       /* descripcion:String, */
        precio:Number,
        existencias:Number,
        
