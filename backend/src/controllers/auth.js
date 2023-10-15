@@ -41,7 +41,8 @@ const signUp = async (req, res)=>{
     try {
         const user = new User(req.body)
         user.hashPassword(req.body.password)
-        const userSaved = await user.save()
+        const userSaved = (await user.save()).toJSON()
+        delete userSaved.password
         return res.json({
             success: true, 
             message: 'Usuario registrado exitosamente',
