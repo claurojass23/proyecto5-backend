@@ -2,9 +2,8 @@ const mongoose =require('mongoose')
 
 const prosuctoSchema = new mongoose.Schema(
     {
-       /* img:String, */
+       
        nombre:String,
-       /* descripcion:String, */
        precio:Number,
        existencias:Number,
        

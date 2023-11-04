@@ -14,7 +14,6 @@ const login = async (req, res)=>{
         })
     }
 
-    //consultar el usuario desde la BD
     const user = await User.findOne({email})
     console.log(user)
 

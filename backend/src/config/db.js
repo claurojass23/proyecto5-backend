@@ -13,12 +13,3 @@ const connect = async (uri) => {
 module.exports = connect;
 
 
-/* const mongoose = require('mongoose')
-require('dotenv').config()
-
-const connect = async ()=>{
-    const connection = await mongoose.connect(process.env.MONGO_URL)
-    console.log('se ha conectado correctamente:', connection.connection.host)
-}
-
-module.exports = connect */
